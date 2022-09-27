@@ -14,6 +14,14 @@ void swap(int* a, int* b)
 }
 int partition(int arr[],int low, int high)
 {
+    /*
+    For Randomised Quick Sort: Pick pivot randomly
+            int random=rand()%high;
+            int pivot=arr[random]
+            swap the element at arr[random] and arr[j] on line 40
+    */
+
+   /*For descending order sorting, change the do-while loop condition*/
     int pivot=arr[low];
     int i,j;
     i=low,j=high;
